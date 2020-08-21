@@ -41,7 +41,7 @@ app.post("/",function(req,res){
       const icon = weatherData.weather[0].icon;
       const imageURL = "http://openweathermap.org/img/wn/"+icon+"@2x.png"
       res.write("<body style='background-color: #ade498;font-family: Merriweather, serif;text-align: center;'>");
-      res.write("<h1 style='text-align:center; display:block;color:#24a1ae;font-size:3rem;font-family:Merriweather, serif;margin:auto;padding:30px;'> Your friendly Weather App!</h1>")
+      res.write("<h1 style='text-align:center; display:block;color:#24a1ae;font-size:3rem;font-family:Merriweather, serif;margin:auto;padding:30px;'> WeatherMan!</h1>")
             res.write("<h3 style='text-align:center; color:#3282b8;font-size:1.5rem;font-family:Merriweather, serif;margin:auto;padding:20px 20px 10px;'>Current weather conditions : "+desc+"!</h3>");
             res.write("<img style='align:center' src="+ imageURL +">");
       res.write("<h3 style='text-align:center; display:block;color:#0f4c75;font-size:1.5rem;font-family:Merriweather, serif;margin:auto;padding:10px;'>Temperature in "+ query +" : "+temp+" degree Celsius</h3>");
